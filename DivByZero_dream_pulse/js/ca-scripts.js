@@ -23,8 +23,11 @@ function toggleColors() {
 
 function hideElement() {
     //<ul class="nav flex-row tm-social-links">  <!--todo: Hide social links-->
-
-};
+    const element = document.getElementsByClassName("tm-social-links");
+    for (let i = 0; i < element.length; i++) {
+      element[i].style.display = "none";
+    }
+  }
 
  function addText() {
 
